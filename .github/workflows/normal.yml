@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build x86 image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ehco1996/ehco
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -52,7 +52,7 @@ jobs:
 
       - uses: actions/checkout@master
       - name: Build arm image
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: ehco1996/ehco
           username: ${{ secrets.DOCKER_USERNAME }}
